@@ -2,8 +2,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Havoc stuff
+$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 
 # Inherit from RMX1805 device
 $(call inherit-product, device/oppo/RMX1805/device.mk)
@@ -25,5 +25,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRIVATE_BUILD_DESC="S88051AA1-user 9 PKQ1.190319
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := "google/sunfish/sunfish:11/RQ2A.210505.002/7246365:user/release-keys"
 
-#TARGET_GAPPS_ARCH := ARM64
+
 TARGET_BOOT_ANIMATION_RES := 720
